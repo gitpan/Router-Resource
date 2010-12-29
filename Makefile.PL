@@ -3,16 +3,16 @@ require 5.008001;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'PL_FILES' => {},
-  'INSTALLDIRS' => 'site',
   'NAME' => 'Router::Resource',
-  'EXE_FILES' => [],
   'VERSION_FROM' => 'lib/Router/Resource.pm',
   'PREREQ_PM' => {
-                   'Test::More' => '0.70',
+                   'Module::Build' => '0.30',
                    'Router::Simple' => '0.07',
                    'Sub::Exporter' => 0,
-                   'Module::Build' => '0.30'
-                 }
+                   'Test::More' => '0.70'
+                 },
+  'INSTALLDIRS' => 'site',
+  'EXE_FILES' => [],
+  'PL_FILES' => {}
 )
 ;
